@@ -1,0 +1,273 @@
+/* Cenário azul*/
+.game-board {
+	width: 100%;
+	height: 720px;
+	border-bottom: 5px solid #d2ff52;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+/* Cenário verde */
+.verde {
+	width: 100%;
+	height: 220px;
+	background: #d2ff52; 
+	background: -moz-linear-gradient(top,  #d2ff52 0%, #91e842 100%); 
+	background: -webkit-linear-gradient(top,  #d2ff52 0%,#91e842 100%); 
+	background: linear-gradient(to bottom,  #d2ff52 0%,#91e842 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
+}
+
+/* Tubo verde */
+.pipe {
+	position: absolute;
+	bottom: 0;
+	width: 80px;
+	right: -80px;
+	animation: pipe-animation 2s infinite linear;
+
+}
+@keyframes pipe-animation {
+	from {
+		right: 0;
+	}
+	to {
+		right: 100%;
+	}
+}
+
+/* Mario */
+.mario {
+	width: 150px;
+	position: absolute;
+	bottom: 0;
+
+}
+.jump {
+	animation: jump 500ms ease-out;
+}
+@keyframes jump {
+	0% {
+		bottom: 0;
+	}
+	40% {
+		bottom: 180px;
+	}
+	50% {
+		bottom: 180px;
+	}
+	60% {
+		bottom: 180px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+/* Nuvens */
+.clouds {
+	width: 450px;
+	position: absolute;
+	animation: clouds-animation 20s infinite linear;
+
+}
+@keyframes clouds-animation {
+	from {
+		right: -550px;
+	}
+	to {
+		right: 100%;
+	}
+}
+
+/* Perdeu */
+.lose {
+	display: none;
+    margin-left: auto;
+    margin-right: auto;
+	height: 350px;
+	margin-bottom: 90px;
+	position: relative;
+
+}
+
+/* Ganhou */
+.ganhou {
+	display: none;
+    margin-left: auto;
+    margin-right: auto;
+	height: 300px;
+	margin-bottom: 90px;
+
+}
+
+/* Caixa cinza */
+.informa {
+	width: 40%;
+	height: 220px;
+	padding: 15px 0;
+	background: black;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	margin: 50px auto;
+	padding: 10px;
+	opacity: 0.75;
+	}
+
+/* texto da vida */
+.vida {
+	float: right;
+	text-align: right;
+	margin-left: 2px;
+	padding-top: 15px;
+}
+
+/* texto dos pontos */
+.pontos {
+	text-align: left;
+	margin-left: 2px;
+	float: left;
+	padding-top: 15px;
+}
+
+/* Caixa preta */
+.caixaDois {
+	width: 50%;
+	height: 120px;
+	padding: 15px 0;
+	background: gray;
+	border: none;
+	border-radius: 5px;
+	margin: auto auto;
+	margin-top: 25px;
+
+}
+
+/* Mario dentro da caixa preta */
+.mariozinho {
+	width: 11%;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Botão de restart*/
+main .restart input {
+	width: 10%;
+	height: 35px;
+	background-color: black;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	margin-left: 5px;
+}
+
+/* Cenario azul tela inicial */
+.game-boarddois{
+	width: 100%;
+	border-bottom: 5px solid #d2ff52;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(#87CEEB, #E0F6FF);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 735px;
+}
+
+.box {
+	display: flex;
+	width: 930px;
+	align-items: center;
+}
+
+/*mario com dino */
+.imagem {
+	width: 50%;
+	display: flex;
+	align-items:center;
+	padding: 20px;
+	margin-left: 0;
+	padding-left: 0;
+	margin: auto auto;
+}
+
+.form-box {
+	padding: 30px 40px;
+	padding-left: 0;
+	width: 50%;
+	align-items: center;
+	margin-left: 0;
+	margin: auto auto;
+	
+}
+
+.form-box h2 {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 2px;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+.form-box p {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 2px;
+	text-align: center;
+}
+
+.form-box form {
+	margin: 20px 0;
+}
+
+form .input-group {
+	margin-bottom: 15px;
+}
+
+/* input digite seu nome */
+form .input-group input{
+	width: 70%;
+	height: 25px;
+	border-radius: 5px;
+	border: 2px solid transparent;	
+}
+
+form {
+	text-align: center;
+}
+
+form .input-groupdois {
+	margin-bottom: 15px;
+}
+
+/* botão de enter */
+form .input-groupdois input {
+	width: 35%;
+	height: 35px;
+	background-color: black;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#name-container {
+	text-align: center;
+	padding: 22px;
+	font-size: 22px;
+}
+
